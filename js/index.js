@@ -37,7 +37,6 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
@@ -98,20 +97,6 @@ visionH4.textContent = (siteContent["main-content"]["vision-h4"]);
 
 let visionP = document.querySelector('.main-content .bottom-content .text-content:nth-child(3) p');
 visionP.textContent = (siteContent["main-content"]["vision-content"]);
-
-
-// "contact": {
-//   "contact-h4" : "Contact",
-//   "address" : "123 Way 456 Street Somewhere, USA",
-//   "phone" : "1 (888) 888-8888",
-//   "email" : "sales@greatidea.io",
-// },
-
-// let contactH4 = document.querySelector('.container .contact h4');
-// contactH4.textContent = (siteContent["contact"]["contact-h4"]);
-
-// let contactAddress = document.querySelector('.container .contact:nth-child(2) p')
-// contactAddress = (siteContent["contact"]["address"]);
 
 let contactTitle = document.querySelector(".contact h4");
 contactTitle.textContent = (siteContent["contact"]["contact-h4"]);
