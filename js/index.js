@@ -37,6 +37,78 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+let navItems = Array.from(document.getElementsByTagName("a"));
+navItems.forEach(item => item.style.color = "green");
+
+navItems[0].textContent = (siteContent["nav"]["nav-item-1"])
+navItems[1].textContent = (siteContent["nav"]["nav-item-2"])
+navItems[2].textContent = (siteContent["nav"]["nav-item-3"])
+navItems[3].textContent = (siteContent["nav"]["nav-item-4"])
+navItems[4].textContent = (siteContent["nav"]["nav-item-5"])
+navItems[5].textContent = (siteContent["nav"]["nav-item-6"])
+
+let navElement = document.querySelector('nav');
+navElement.prepend('Secret blog');
+navElement.append('Real blog');
+
+
+let ctaHeaderText = document.querySelector('.cta-text h1');
+ctaHeaderText.textContent = (siteContent["cta"]["h1"]);
+
+let ctaButtonText = document.querySelector('.cta-text button');
+ctaButtonText.textContent = (siteContent["cta"]["button"]);
+
+let featuresH4 = document.querySelector('.main-content .top-content:nth-child(1) h4');
+featuresH4.textContent = (siteContent["main-content"]["features-h4"]);
+
+let featuresP = document.querySelector('.main-content .top-content:nth-child(1) p');
+featuresP.textContent = (siteContent["main-content"]["features-content"]);
+
+let aboutH4 = document.querySelector('.main-content .top-content .text-content:nth-child(2) h4');
+aboutH4.textContent = (siteContent["main-content"]["about-h4"]);
+
+let aboutP = document.querySelector('.main-content .top-content .text-content:nth-child(2) p');
+aboutP.textContent = (siteContent["main-content"]["about-content"])
+
+
+let servicesH4 = document.querySelector('.main-content .bottom-content .text-content:first-child h4');
+servicesH4.textContent = (siteContent["main-content"]["services-h4"]);
+
+let servicesP = document.querySelector('.main-content .bottom-content .text-content:first-child p');
+servicesP.textContent = (siteContent["main-content"]["services-content"]);
+
+let productH4 = document.querySelector('.main-content .bottom-content .text-content:nth-child(2) h4');
+productH4.textContent = (siteContent["main-content"]["product-h4"]);
+
+let productP = document.querySelector('.main-content .bottom-content .text-content:nth-child(2) p');
+productP.textContent = (siteContent["main-content"]["product-content"])
+
+let visionH4 = document.querySelector('.main-content .bottom-content .text-content:nth-child(3) h4');
+visionH4.textContent = (siteContent["main-content"]["vision-h4"]);
+
+let visionP = document.querySelector('.main-content .bottom-content .text-content:nth-child(3) p');
+visionP.textContent = (siteContent["main-content"]["vision-content"]);
+
+let contactTitle = document.querySelector(".contact h4");
+contactTitle.textContent = (siteContent["contact"]["contact-h4"]);
+
+let contactinfo1 = document.querySelectorAll(".contact p")[0];
+contactinfo1.textContent = (siteContent["contact"]["address"]);
+
+let contactinfo2 = document.querySelectorAll(".contact p")[1];
+contactinfo2.textContent = (siteContent["contact"]["phone"]);
+
+let contactinfo3 = document.querySelectorAll(".contact p")[2];
+contactinfo3.textContent = (siteContent["contact"]["email"]);
+
+let footer = document.querySelector('footer');
+footer.textContent = (siteContent["footer"]["copyright"]);
